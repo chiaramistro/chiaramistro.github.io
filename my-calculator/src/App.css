@@ -1,0 +1,14 @@
+.App {
+  display: flex;
+  justify-content: center;
+  background-color: #000000c2;
+}
+
+.calculator-container {
+  border: 1px solid black;
+  border-radius: 30px;
+  width: fit-content;
+  margin: 16px;
+  padding: 16px;
+  background-color: beige;
+}
