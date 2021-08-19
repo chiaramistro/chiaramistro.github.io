@@ -17,19 +17,25 @@ body {
 body {
   font-family: "Merriweather", serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 2.5rem;
   line-height: 1.5;
   color: #201A23; }
 
 h5 {
+  font-size: 3.5rem;
   font-weight: 500; }
 
 h3 {
+  font-size: 4rem;
   font-weight: 700; }
 
 h1 {
+  font-size: 6rem;
   line-height: 1.7;
   font-weight: 700; }
+
+p {
+  font-size: 2.5rem; }
 
 .section-header {
   display: flex;
@@ -48,42 +54,62 @@ h1 {
   .section-header .subtitle {
     letter-spacing: 1.5px; }
 
+.section-socials {
+  padding-top: 32px; }
+  .section-socials .socials__btn-link {
+    font-style: italic;
+    text-decoration: none;
+    color: #FBFBFB;
+    text-shadow: 1px 0px rgba(0, 0, 0, 0.089);
+    font-size: 2.5rem; }
+
 .section-projects {
-  background-color: #6C5775;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
-  padding: 8px; }
+  padding: 8px;
+  display: flex;
+  flex-direction: column; }
   .section-projects .projects-title {
-    color: white;
+    margin: 32px 0px 16px 0px;
+    color: #6C5775;
     text-align: center;
     letter-spacing: 1px; }
   .section-projects .project {
     background-color: rgba(255, 255, 255, 0.308);
-    margin: 8px 8px;
+    margin: 0px auto;
     display: flex;
     flex-direction: row;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
+    border-radius: 10px;
+    width: 80%; }
     .section-projects .project .half-section {
-      width: 50%;
-      margin: 8px 8px; }
+      width: 50%; }
+      .section-projects .project .half-section--1 {
+        margin: 60px; }
+      .section-projects .project .half-section--2 {
+        margin: 60px 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 100px; }
     .section-projects .project .project__img {
       box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
       max-width: 100%;
-      max-height: 100%; }
+      max-height: 100%;
+      border-radius: 10px; }
     .section-projects .project .project__title {
-      color: white;
-      padding: 8px 0px;
+      color: #6C5775;
+      padding-bottom: 8px;
       letter-spacing: 1px;
       text-decoration: underline; }
     .section-projects .project .project__description {
-      letter-spacing: 1px;
-      font-size: 12px; }
+      letter-spacing: 1px; }
     .section-projects .project .project__btn {
       background-color: #DDC292;
       padding: 5px 10px;
       width: fit-content;
       box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.2);
-      margin: 8px 0px; }
+      margin: 8px auto;
+      border-radius: 2px; }
       .section-projects .project .project__btn-link {
         text-decoration: none;
         color: #FBFBFB;
-        text-shadow: 1px 0px rgba(0, 0, 0, 0.089); }
+        text-shadow: 1px 0px rgba(0, 0, 0, 0.089);
+        font-size: 2.5rem; }
