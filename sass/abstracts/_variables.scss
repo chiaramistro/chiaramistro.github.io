@@ -1,13 +1,13 @@
 // COLORS
 $primary-color: #9E4770;
 $secondary-color: #C59849;
-//$tertiary-color: #2E2532;
-$tertiary-color: #45503B;
+$tertiary-color: #2E2532;
+$tertiary-color-2: #45503B;
 
 $primary-color-light: #C07296;
 $secondary-color-light: #DDC292;
-//$tertiary-color-light: #6C5775;
-$tertiary-color-light: #7A8D68;
+$tertiary-color-light: #6C5775;
+$tertiary-color-light-2: #7A8D68;
 
 $light-color: #FBFBFB;
 $dark-color: #201A23;
@@ -21,4 +21,7 @@ $black-color: #000;
 $default-font-size: 1.6rem;
 
 $default-box-shadow: 0 1rem 1rem rgba($black-color, 0.2);
+$default-btn-shadow: 0 .5rem 3rem rgba($black-color, 0.2);
 $light-box-shadow: 0 1.5rem 4rem rgba($white-color, 0.15);
+
+$default-text-shadow: 2px 2px rgba(0, 0, 0, 0.308);
