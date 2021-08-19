@@ -1,0 +1,21 @@
+body {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: $default-font-size;
+  line-height: 1.5;
+  color: $dark-color;
+}
+
+//bigger number = smaller title
+h5 {
+  font-weight: 500;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  line-height: 1.7;
+  font-weight: 700;
+}

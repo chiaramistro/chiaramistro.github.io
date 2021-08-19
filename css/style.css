@@ -1,3 +1,51 @@
-* {
-  background-color: pink;
-  color: blue; }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  background-color: #FBFBFB; }
+
+body {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #201A23; }
+
+h5 {
+  font-weight: 500; }
+
+h3 {
+  font-weight: 700; }
+
+h1 {
+  line-height: 1.7;
+  font-weight: 700; }
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85vh; }
+  .section-header .title {
+    margin-top: -24px;
+    letter-spacing: 1px; }
+  .section-header .subtitle {
+    letter-spacing: 1.5px; }
+
+.section-scroll {
+  text-align: center; }
+
+.section-projects .project_container {
+  display: flex;
+  width: 100%; }

@@ -1,0 +1,38 @@
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ // background-color: green;
+  height: 85vh;
+
+  .title {
+    margin-top: -24px;
+    letter-spacing: 1px;
+  }
+
+  .subtitle {
+    letter-spacing: 1.5px;
+  }
+}
+
+.section-scroll {
+  text-align: center;
+}
+
+.section-projects {
+
+    .projects-title {
+    //    background-color: pink;
+    }
+
+  .project_container {
+  //  background-color: yellow;
+    display: flex;
+    width: 100%;
+
+    .project_link {
+    //  color: red;
+    }
+  }
+}
