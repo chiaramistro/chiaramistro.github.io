@@ -1,3 +1,35 @@
+/*
+Ranges:
+    - 0-600px: phones
+    - 600-900px: tablet portraint
+    - 900-1200px: tablet landscape
+    - [1200-1800px] desktop
+    - 1800- ++: big desktops
+*/
+.u-small-text {
+  font-size: 1.5rem; }
+
+.u-big-text {
+  font-size: 4rem; }
+  @media (max-width: 600px) {
+    .u-big-text {
+      font-size: 2.5rem; } }
+
+.u-font-size-default {
+  font-size: 2.5rem; }
+  @media (max-width: 600px) {
+    .u-font-size-default {
+      font-size: 1.5rem; } }
+
+.u-padding-default {
+  padding: 48px; }
+  @media (max-width: 600px) {
+    .u-padding-default {
+      padding: 16px 8px; } }
+  @media (max-width: 900px) {
+    .u-padding-default {
+      padding: 30px 16px; } }
+
 *,
 *::after,
 *::before {
@@ -7,12 +39,37 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  /*order MATTERS!! if width = 700px...
+  then both tab-land and tab-port are valid (since width is smaller than both).
+  to have the right result, we have to place the one with higher priority in the end.
+  Since the ranges are:
+    - 0-600px
+    - 600-900px <--
+    - 900-1200px
+    We want the second range to apply, that is tab-port
+    (which should have higher priority than tab-land)
+*/ }
+  @media (max-width: 1200px) {
+    html {
+      font-size: 56%; } }
+  @media (max-width: 600px) {
+    html {
+      font-size: 30%; } }
+  @media (max-width: 900px) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 1800px) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
   padding: 1.5rem;
   background-color: #FBFBFB; }
+  @media (max-width: 600px) {
+    body {
+      padding: 0px; } }
 
 body {
   font-family: "Merriweather", serif;
@@ -24,28 +81,37 @@ body {
 h5 {
   font-size: 3.5rem;
   font-weight: 500; }
+  @media (max-width: 600px) {
+    h5 {
+      font-size: 2rem; } }
 
 h3 {
   font-size: 4rem;
   font-weight: 700; }
+  @media (max-width: 600px) {
+    h3 {
+      font-size: 2.5rem; } }
 
 h1 {
   font-size: 6rem;
   line-height: 1.7;
   font-weight: 700; }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 3.5rem; } }
 
 p {
   font-size: 2.5rem; }
-
-.u-small-text {
-  font-size: 1.5rem; }
+  @media (max-width: 600px) {
+    p {
+      font-size: 1.5rem; } }
 
 .section-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 8px 0px;
+  margin: 0px 0px 8px 0px;
   background-color: #6C5775;
   height: 85vh;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
@@ -63,8 +129,7 @@ p {
     font-style: italic;
     text-decoration: none;
     color: #FBFBFB;
-    text-shadow: 1px 0px rgba(0, 0, 0, 0.089);
-    font-size: 2.5rem; }
+    text-shadow: 1px 0px rgba(0, 0, 0, 0.089); }
 
 .section-title {
   margin: 16px 0px 48px 0px;
@@ -77,25 +142,20 @@ p {
 
 .section-aboutme {
   background-color: #FBFBFB;
-  padding: 48px;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .section-aboutme .aboutme__content {
     padding-bottom: 32px;
-    text-align: center;
-    width: 50%; }
+    text-align: center; }
   .section-aboutme .aboutme__text {
-    letter-spacing: 1px;
-    font-size: 2.5rem; }
-    .section-aboutme .aboutme__text .hi-text {
-      font-size: 4rem; }
+    letter-spacing: 1px; }
 
 .section-projects {
   background-color: #6C5775;
-  padding: 48px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
   .section-projects .project {
     background-color: rgba(255, 255, 255, 0.932);
     margin: 0px auto;
@@ -103,16 +163,32 @@ p {
     flex-direction: row;
     border-radius: 10px;
     width: 80%; }
+    @media (max-width: 900px) {
+      .section-projects .project {
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 8px;
+        width: 100%; } }
     .section-projects .project .half-section {
       width: 50%; }
+      @media (max-width: 900px) {
+        .section-projects .project .half-section {
+          width: 90%; } }
       .section-projects .project .half-section--1 {
         margin: 60px; }
+        @media (max-width: 900px) {
+          .section-projects .project .half-section--1 {
+            margin: 16px 0px; } }
       .section-projects .project .half-section--2 {
         margin: 60px 8px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding-bottom: 100px; }
+        @media (max-width: 900px) {
+          .section-projects .project .half-section--2 {
+            margin: 8px;
+            padding-bottom: 10px; } }
     .section-projects .project .project__img {
       box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
       max-width: 100%;
@@ -135,8 +211,7 @@ p {
       .section-projects .project .project__btn-link {
         text-decoration: none;
         color: #FBFBFB;
-        text-shadow: 1px 0px rgba(0, 0, 0, 0.089);
-        font-size: 2.5rem; }
+        text-shadow: 1px 0px rgba(0, 0, 0, 0.089); }
 
 .section-footer {
   background-color: #FBFBFB;

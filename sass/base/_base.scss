@@ -9,10 +9,43 @@
 
 html {
   font-size: 62.5%; //1rem = 10px; 10px/16px: 62.5%
+
+  /*order MATTERS!! if width = 700px...
+  then both tab-land and tab-port are valid (since width is smaller than both).
+  to have the right result, we have to place the one with higher priority in the end.
+  Since the ranges are:
+    - 0-600px
+    - 600-900px <--
+    - 900-1200px
+    We want the second range to apply, that is tab-port
+    (which should have higher priority than tab-land)
+*/
+
+  @include respond(tab-land) { //width < 1200px
+    font-size: 56%; //1rem = 9px, 9/16=56%
+  }
+
+  @include respond(phone) { //width < 600px
+    font-size: 30%;
+  }
+
+  @include respond(tab-port) { //width < 900px
+    font-size: 50%;  //1rem = 8px, 8/16=50%
+  }
+
+  @include respond(big-desktop) { //width > 1800px
+    font-size: 75%; //1rem = 12px, 12/16=75%
+  }
+
+
 }
 
 body {
   box-sizing: border-box;
   padding: 1.5rem;
   background-color: $light-color;
+
+  @include respond(phone) { //width < 600px
+    padding: 0px;
+  }
 }
