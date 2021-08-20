@@ -17,11 +17,15 @@ $grey-color: #777;
 $white-color: #fff;
 $black-color: #000;
 
-//FONT SIZES
+// FONT SIZES
 $default-font-size: 2.5rem;
 
-$default-box-shadow: 0 1rem 1rem rgba($black-color, 0.2);
-$default-btn-shadow: 0 .5rem 3rem rgba($black-color, 0.2);
-$light-box-shadow: 0 1.5rem 4rem rgba($white-color, 0.15);
+// PADDINGS AND MARGINS
+$default-section-padding: 48px;
 
+// SHADOWS
+$default-box-shadow: 0 1rem 1rem rgba($black-color, 0.2);
+$light-box-shadow: 0 1.5rem 4rem rgba($white-color, 0.15);
+$default-btn-shadow: 0 .5rem 3rem rgba($black-color, 0.2);
+$default-btn-text-shadow: 1px 0px rgba(0, 0, 0, 0.089);
 $default-text-shadow: 2px 2px rgba(0, 0, 0, 0.308);
