@@ -28,28 +28,57 @@
       font-style: italic;
       text-decoration: none;
       color: $light-color;
-      text-shadow: 1px 0px rgba(0, 0, 0, 0.089);
+      text-shadow: $default-btn-text-shadow;
       font-size: $default-font-size;
     }
   }
 }
 
+.section-title {
+  margin: 16px 0px $default-section-padding 0px;
+  color: $tertiary-color-light; //white;
+  text-align: center;
+  letter-spacing: 1px;
+
+  &--white {
+    color: $white-color;
+    text-shadow: $default-text-shadow;
+  }
+}
+
+.section-aboutme {
+  background-color: $light-color;
+  padding: $default-section-padding;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .aboutme__content {
+    padding-bottom: 32px;
+    //border: 2px solid $secondary-color-light;
+    text-align: center;
+    width: 50%;
+  }
+
+  .aboutme__text {
+    letter-spacing: 1px;
+    font-size: $default-font-size;
+
+    .hi-text {
+      font-size: 4rem;
+    }
+  }
+}
+
 .section-projects {
-  //background-color: $tertiary-color-light;
+  background-color: $tertiary-color-light;
   //box-shadow: $default-box-shadow;
-  padding: 8px;
+  padding: $default-section-padding;
   display: flex;
   flex-direction: column;
 
-  .projects-title {
-    margin: 32px 0px 16px 0px;
-    color: $tertiary-color-light; //white;
-    text-align: center;
-    letter-spacing: 1px;
-  }
-
   .project {
-    background-color: rgba(255, 255, 255, 0.308);
+    background-color: rgba(255, 255, 255, 0.932);
     margin: 0px auto;
     display: flex;
     flex-direction: row;
@@ -102,9 +131,19 @@
       &-link {
         text-decoration: none;
         color: $light-color;
-        text-shadow: 1px 0px rgba(0, 0, 0, 0.089);
+        text-shadow: $default-btn-text-shadow;
         font-size: $default-font-size;
       }
     }
+  }
+}
+
+.section-footer {
+  background-color: $light-color;
+  padding: 16px;
+
+  .footer__text {
+    padding-top: 16px;
+    text-align: center;
   }
 }
