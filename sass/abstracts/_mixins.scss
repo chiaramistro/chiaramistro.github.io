@@ -1,0 +1,24 @@
+//MEDIA QUERY MANAGER
+/*
+Ranges:
+    - 0-600px: phones
+    - 600-900px: tablet portraint
+    - 900-1200px: tablet landscape
+    - [1200-1800px] desktop
+    - 1800- ++: big desktops
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 600px) { @content };
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 900px) { @content };
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: 1200px) { @content };
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width: 1800px) { @content };
+    }
+}   
