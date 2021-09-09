@@ -9,6 +9,12 @@ Ranges:
 .u-small-text {
   font-size: 1.5rem; }
 
+.u-medium-text {
+  font-size: 2rem; }
+  @media (max-width: 600px) {
+    .u-medium-text {
+      font-size: 1.5rem; } }
+
 .u-big-text {
   font-size: 4rem; }
   @media (max-width: 600px) {
@@ -201,6 +207,10 @@ p {
       text-decoration: underline; }
     .section-projects .project .project__description {
       letter-spacing: 1px; }
+    .section-projects .project .project__technology {
+      letter-spacing: 1px;
+      padding-bottom: 16px;
+      padding-top: 8px; }
     .section-projects .project .project__btn {
       background-color: #DDC292;
       padding: 5px 10px;

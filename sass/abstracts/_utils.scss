@@ -2,6 +2,14 @@
     font-size: 1.5rem;
 }
 
+.u-medium-text {
+  font-size: 2rem;
+
+  @include respond(phone) { //width < 600px
+    font-size:  1.5rem;
+  }
+}
+
 .u-big-text {
     font-size: 4rem;
 
