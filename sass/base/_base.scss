@@ -42,10 +42,23 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 1.5rem;
+  //padding: 1.5rem;
   background-color: $light-color;
 
   @include respond(phone) { //width < 600px
     padding: 0px;
   }
+}
+
+// Reveal elements on scroll
+.reveal {
+  position: relative;
+  transform: translateY(150px); //150 = revealPoint
+  opacity: 0; //hidden before
+  transition: all .5s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1; //section shown when active
 }

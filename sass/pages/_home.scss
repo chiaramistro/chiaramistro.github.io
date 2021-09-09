@@ -1,3 +1,7 @@
+section {
+  height: 100vh;
+}
+
 .section-header {
   display: flex;
   flex-direction: column;
@@ -5,7 +9,7 @@
   justify-content: center;
   margin: 0px 0px 8px 0px;
   background-color: $tertiary-color-light;
-  height: 85vh;
+  //height: 85vh; //match section height
   box-shadow: $default-box-shadow;
 
   .title {
