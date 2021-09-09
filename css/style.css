@@ -130,7 +130,8 @@ section {
   align-items: center;
   justify-content: center;
   margin: 0px 0px 8px 0px;
-  background-color: #6C5775;
+  text-align: center;
+  background-color: #7f1e31;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
   .section-header .title {
     margin-top: -24px;
@@ -150,7 +151,7 @@ section {
 
 .section-title {
   margin: 16px 0px 48px 0px;
-  color: #6C5775;
+  color: #7f1e31;
   text-align: center;
   letter-spacing: 1px; }
   .section-title--white {
@@ -161,15 +162,52 @@ section {
   background-color: #FBFBFB;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  height: fit-content; }
   .section-aboutme .aboutme__content {
     padding-bottom: 32px;
-    text-align: center; }
-  .section-aboutme .aboutme__text {
-    letter-spacing: 1px; }
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    @media (max-width: 900px) {
+      .section-aboutme .aboutme__content {
+        flex-direction: column;
+        align-items: center; } }
+    .section-aboutme .aboutme__content .aboutme__picture {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 16px;
+      width: 40%;
+      height: fit-content; }
+      .section-aboutme .aboutme__content .aboutme__picture .aboutme__polaroid {
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 24px;
+        width: 270px;
+        min-width: 270px;
+        height: 430px; }
+        .section-aboutme .aboutme__content .aboutme__picture .aboutme__polaroid .aboutme__polaroid-img {
+          background-color: pink;
+          width: 230px;
+          min-width: 230px;
+          height: 310px;
+          object-fit: cover; }
+    .section-aboutme .aboutme__content .aboutme__text {
+      padding-top: 32px;
+      padding: 8px;
+      width: 60%;
+      letter-spacing: 1px; }
+      @media (max-width: 900px) {
+        .section-aboutme .aboutme__content .aboutme__text {
+          padding-top: 60px;
+          text-align: center; } }
 
 .section-projects {
-  background-color: #6C5775;
+  background-color: #7f1e31;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -212,7 +250,7 @@ section {
       max-height: 100%;
       border-radius: 10px; }
     .section-projects .project .project__title {
-      color: #6C5775;
+      color: #7f1e31;
       padding-bottom: 8px;
       letter-spacing: 1px;
       text-decoration: underline; }
@@ -223,7 +261,7 @@ section {
       padding-bottom: 16px;
       padding-top: 8px; }
     .section-projects .project .project__btn {
-      background-color: #DDC292;
+      background-color: #565438;
       padding: 5px 10px;
       width: fit-content;
       box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.2);
