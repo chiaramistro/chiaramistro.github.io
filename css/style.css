@@ -205,6 +205,17 @@ p {
       color: #FBFBFB;
       text-shadow: 1px 0px rgba(0, 0, 0, 0.089); }
 
+.btn {
+  background-color: #565438;
+  padding: 5px 10px;
+  width: fit-content;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.2);
+  margin: 0px auto;
+  border-radius: 2px; }
+  .btn-link {
+    text-decoration: none;
+    color: #FBFBFB;
+    text-shadow: 1px 0px rgba(0, 0, 0, 0.089); }
 section {
   height: 100vh; }
 

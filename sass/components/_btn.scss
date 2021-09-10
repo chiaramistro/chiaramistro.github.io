@@ -1,0 +1,14 @@
+.btn {
+    background-color: $website-color-2; //$secondary-color-light;
+    padding: 5px 10px;
+    width: fit-content;
+    box-shadow: $default-btn-shadow;
+    margin: 0px auto;
+    border-radius: 2px;
+
+    &-link {
+      text-decoration: none;
+      color: $light-color;
+      text-shadow: $default-btn-text-shadow;
+    }
+  }
