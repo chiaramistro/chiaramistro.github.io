@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: center;
   transition: 0.5s;
+  margin: 16px;
 
   //Desktop views
   &-1 {
@@ -28,8 +29,9 @@
   }
 
   @include respond(phone) {    //width < 600px
-    height: 150px;
-    width: 150px;
+    margin: 8px;
+    height: 100px;
+    width: 100px;
   }
 }
 
