@@ -1,4 +1,4 @@
 # chiaramistro.github.io
-Github Pages Example
+My personal Github Page
 
-Visit [here](https://chiaramistro.github.io/)
+Visit my Github Page [here](https://chiaramistro.github.io/)
